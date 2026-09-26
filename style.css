@@ -17,6 +17,7 @@ body {
     font-family: Arial, sans-serif;
     background: #101631;
     color: #182044;
+    overflow-x: hidden;
 }
 
 
@@ -104,16 +105,11 @@ body {
         ),
         url("girl.png.png");
 
-    /*
-       This shows the complete image.
-       It prevents the girl's hair from being cut.
-    */
-    background-size:100% 100%;
-    background-position:center;
+    background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
 
     color: white;
-   
 }
 
 .hero-content {
@@ -164,39 +160,30 @@ body {
     display: inline-block;
     padding: 13px 24px;
     border-radius: 24px;
+    border: none;
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.primary-btn {
-    border: none;
-    background: linear-gradient(90deg, #d779ff, #b99aff);
-    color: #21152f;
-}
-
+.primary-btn,
 .secondary-btn {
-    border: none;
     background: linear-gradient(90deg, #d779ff, #b99aff);
     color: #21152f;
-   
 }
-/* border: 1px solid #d79aff;
-    background: rgba(255, 255, 255, 0.08);
-    color: white;*/
 
 .primary-btn:hover,
 .secondary-btn:hover {
     transform: translateY(-3px);
 }
+
 #typing-text {
     margin-top: 10px;
     margin-left: 75px;
     font-size: 20px;
     color: #d68aff;
     min-height: 30px;
-
 }
 
 
@@ -220,9 +207,7 @@ body {
     background: #f8f8fb;
     border-radius: 15px;
     padding: 22px;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .card p {
@@ -277,17 +262,16 @@ body {
     font-family: cursive;
     text-align: right;
 }
+
+
 /* =====================================
    TOP GRID
 ===================================== */
 
 .top-grid {
     width: 100%;
-
     display: grid;
-
     grid-template-columns: 1fr 2fr 1.4fr;
-
     gap: 18px;
 }
 
@@ -312,6 +296,7 @@ body {
     border: 5px solid white;
     border-radius: 12px;
 }
+
 .image-card p {
     margin-top: 15px;
     color: #efc8ff;
@@ -327,6 +312,7 @@ body {
 .skills-card {
     position: relative;
 }
+
 .small-heading {
     position: absolute;
     top: 22px;
@@ -359,8 +345,6 @@ body {
     text-align: center;
 
     background: #fbfbff;
-
-
     font-size: 10px;
 
     transition: 0.3s;
@@ -386,19 +370,14 @@ body {
 }
 
 
-
-
 /* =====================================
    THREE COLUMN GRID
 ===================================== */
 
 .three-grid {
     display: grid;
-
     grid-template-columns: 1fr 1fr 1fr;
-
     gap: 16px;
-
     margin-top: 16px;
 }
 
@@ -415,13 +394,9 @@ body {
 
 .inner-box {
     background: #f3f3f8;
-
     border: 1px solid #dedee9;
-
     border-radius: 10px;
-
     padding: 14px;
-
     margin-top: 15px;
 }
 
@@ -447,13 +422,9 @@ body {
 
 .project {
     border: 1px solid #e0e0e9;
-
     padding: 15px;
-
     border-radius: 10px;
-
     margin-top: 12px;
-
     background: #fbfbfd;
 }
 
@@ -515,16 +486,13 @@ body {
 
 .strength-grid div {
     padding: 13px 5px;
-
     text-align: center;
-
     border: 1px solid #e0e0eb;
-
     border-radius: 9px;
-
     font-size: 10px;
-    background:white;
+    background: white;
 }
+
 .strength-grid > div:hover {
     background: #d792fd;
     color: black;
@@ -558,7 +526,6 @@ body {
 
 .contact-section {
     width: 100%;
-
     margin-top: 20px;
 
     padding: 45px 7%;
@@ -578,15 +545,12 @@ body {
 
 .contact-container {
     max-width: 1400px;
-
     margin: auto;
 
     display: grid;
-
     grid-template-columns: 0.8fr 1.5fr;
 
     gap: 35px;
-
     align-items: center;
 }
 
@@ -616,25 +580,19 @@ body {
     border: 1px solid #b77ee8;
 
     padding: 10px 16px;
-
     border-radius: 20px;
-
     font-size: 12px;
 }
 
 .contact-form {
-    background: rgba(255,255,255,0.08);
-
+    background: rgba(255, 255, 255, 0.08);
     padding: 20px;
-
     border-radius: 15px;
 }
 
 .form-row {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 10px;
 }
 
@@ -646,13 +604,11 @@ body {
     outline: none;
 
     border-radius: 8px;
-
     padding: 13px;
 
     margin-bottom: 10px;
 
-    background: rgba(255,255,255,0.15);
-
+    background: rgba(255, 255, 255, 0.15);
     color: white;
 }
 
@@ -670,15 +626,12 @@ body {
     padding: 12px 22px;
 
     border: none;
-
     border-radius: 20px;
 
     background: #d77cf5;
-
     color: #241633;
 
     font-weight: bold;
-
     cursor: pointer;
 }
 
@@ -691,15 +644,12 @@ footer {
     min-height: 70px;
 
     background: #10152f;
-
     color: white;
 
     padding: 18px 6%;
 
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 
     flex-wrap: wrap;
@@ -781,33 +731,46 @@ footer p {
 
 @media (max-width: 800px) {
 
+    /* NAVIGATION */
+
     .nav {
-        height: auto;
+        min-height: auto;
         padding: 15px;
         flex-direction: column;
         gap: 15px;
     }
 
     .topic {
+        width: 100%;
         flex-wrap: wrap;
         justify-content: center;
     }
 
+
+    /* HERO */
+
     .hero {
-        min-height: 550px;
+        min-height: 650px;
         padding: 50px 7%;
 
-        background-size: 100% 100%;
-        background-position: center;
+        background-size: cover;
+        background-position: 65% center;
     }
 
     .hero-content {
-        width: 60%;
+        width: 80%;
+        max-width: 600px;
+
+        /* Remove desktop movement */
+        transform: none;
     }
 
     .hero h1 {
-        font-size: 50px;
+        font-size: 52px;
     }
+
+
+    /* CONTENT */
 
     .top-grid,
     .three-grid {
@@ -831,307 +794,505 @@ footer p {
 
 
 /* =====================================
-   MOBILE
+   MOBILE PHONE
 ===================================== */
 
 @media (max-width: 500px) {
 
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* =============================
+       NAVIGATION
+    ============================= */
+
+    .nav {
+        width: 100%;
+        min-height: auto;
+
+        padding: 18px 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 15px;
+    }
+
     .name {
-        font-size: 22px;
+        width: 100%;
+        font-size: 26px;
+        text-align: center;
     }
 
     .topic {
-        gap: 10px;
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 12px 15px;
+    }
+
+    .topic li {
+        list-style: none;
     }
 
     .topic a {
-        font-size: 11px;
+        font-size: 12px;
+        white-space: nowrap;
     }
 
-    .hero {
-        min-height: 520px;
-        padding: 40px 6%;
+    .download-btn {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
 
-        background-size: 100% 100%;
+
+    /* =============================
+       HERO
+    ============================= */
+
+    .hero {
+        width: 100%;
+        min-height: 850px;
+
+        padding: 45px 20px;
+
+        display: flex;
+        align-items: center;
+
+        /*
+        IMPORTANT:
+        Use cover instead of 100% 100%.
+        This prevents image stretching.
+        */
+        background-size: cover;
+
+        /*
+        Move image slightly to the right.
+        */
+        background-position: 65% center;
+
+        background-repeat: no-repeat;
     }
 
     .hero-content {
-        width: 70%;
+        width: 100%;
+        max-width: 100%;
+
+        /* Remove desktop transform */
+        transform: none;
+    }
+
+    .hello {
+        font-size: 19px;
+        margin-bottom: 8px;
     }
 
     .hero h1 {
         font-size: 42px;
+        line-height: 1.1;
+        margin-bottom: 15px;
     }
 
     .hero h3 {
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 15px;
     }
 
     .hero-text {
-        font-size: 12px;
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 14px;
+        line-height: 1.7;
     }
 
+    #typing-text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+    /* =============================
+       HERO BUTTONS
+    ============================= */
+
     .hero-buttons {
+        width: 100%;
+
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
+
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 14px 23px;
+        font-size: 14px;
+        border-radius: 25px;
+    }
+
+/* =====================================
+   MOBILE PHONE
+===================================== */
+
+@media (max-width: 500px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* NAVIGATION */
+
+    .nav {
+        width: 100%;
+        min-height: auto;
+        padding: 18px 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    .name {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .topic {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px 15px;
+    }
+
+    .topic li {
+        list-style: none;
+    }
+
+    .topic a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .download-btn {
+        padding: 11px 20px;
+        font-size: 13px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        width: 100%;
+        min-height: 700px;
+
+        padding: 45px 20px;
+
+        display: flex;
+        align-items: center;
+
+        background-size: cover;
+        background-position: 75% center;
+        background-repeat: no-repeat;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        transform: none;
+        padding-top: 10px;
+    }
+
+    .hello {
+        font-size: 19px;
+        margin-bottom: 8px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        line-height: 1.1;
+        margin-bottom: 15px;
+    }
+
+    .hero h3 {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    #typing-text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 25px;
+
+        text-align: center;
+        font-size: 18px;
+        min-height: 30px;
+    }
+
+
+    /* HERO BUTTONS */
+
+    .hero-buttons {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 14px 23px;
+        font-size: 14px;
+        border-radius: 25px;
+    }
+
+
+    /* MAIN CONTENT */
+
+    .container {
+        width: 94%;
+        max-width: 100%;
+        margin: 15px auto;
+    }
+
+
+    /* CARDS */
+
+    .card,
+    .image-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+
+    /* SECTION TITLE */
+
+    .section-title {
+        gap: 8px;
+    }
+
+    .section-title span {
+        font-size: 22px;
+    }
+
+    .section-title h2 {
+        font-size: 20px;
+    }
+
+
+    /* ABOUT IMAGE */
+
+    .image-card {
+        padding: 12px;
+    }
+
+    .image-card img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    /* SKILLS */
+
+    .small-heading {
+        position: static;
+        margin-bottom: 15px;
+        text-align: right;
     }
 
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
     }
 
-    .strength-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .skill {
+        min-height: 70px;
+        padding: 8px 4px;
     }
 
-    .features {
-        grid-template-columns: 1fr;
+    .skill b {
+        font-size: 15px;
     }
+
+    .skill span {
+        font-size: 10px;
+    }
+
+
+    /* EDUCATION */
 
     .areas {
         grid-template-columns: 1fr;
+        gap: 5px;
     }
 
-    .form-row {
-        grid-template-columns: 1fr;
+    .areas ul {
+        padding-left: 18px;
     }
+
+
+    /* PROJECTS */
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 7px;
+    }
+
+    .tags {
+        gap: 5px;
+    }
+
+
+    /* CERTIFICATES */
+
+    .certificate-list {
+        padding-left: 22px;
+    }
+
+    .certificate-list li {
+        font-size: 12px;
+    }
+
+
+    /* STRENGTHS */
+
+    .strength-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .strength-grid div {
+        padding: 12px 5px;
+        font-size: 10px;
+    }
+
+
+    /* RESUME */
 
     .resume-section {
         flex-direction: column;
         align-items: flex-start;
+        gap: 20px;
     }
 
-    footer {
-        flex-direction: column;
-        gap: 8px;
-        text-align: center;
-    }
-}
 
-.nav a.active {
-    color: #d68aff;
-}
+    /* CONTACT */
 
-.nav-scrolled {
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.7s ease;
-}
-
-.reveal.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#topButton {
-    display: none;
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    width: 45px;
-    height: 45px;
-    border: none;
-    border-radius: 50%;
-    background: #29336b;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-#topButton:hover {
-    background: #6b4bbd;
-}
-* {
-    cursor: pointer;
-}
-
-/* ================================
-   MOBILE VIEW
-   ================================ */
-
-@media screen and (max-width: 768px) {
-
-    /* Prevent horizontal scrolling */
-    html,
-    body {
+    .contact-section {
         width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-
-    /* ================================
-       NAVIGATION
-       ================================ */
-
-    nav {
-        width: 100%;
-        padding: 20px 10px;
-        text-align: center;
-    }
-
-    nav h1 {
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    nav ul {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 0;
-        margin: 0;
-    }
-
-    nav ul li {
-        font-size: 15px;
-    }
-
-
-    /* ================================
-       DOWNLOAD RESUME BUTTON
-       ================================ */
-
-    nav .resume-btn {
-        margin-top: 20px;
-        padding: 15px 28px;
-        font-size: 16px;
-        display: inline-block;
-    }
-
-
-    /* ================================
-       HOME / HERO SECTION
-       ================================ */
-
-    .part1 {
-        width: 100%;
-        min-height: 850px;
-        padding: 50px 20px;
+        padding: 40px 20px;
 
         background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .contact-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact-info h2,
+    .contact-info p {
+        margin-left: 0;
+    }
+
+    .social-buttons {
+        gap: 8px;
+    }
+
+    .social-buttons a {
+        font-size: 11px;
+        padding: 9px 13px;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
 
+        gap: 8px;
 
-    /* Hello, I'm */
-
-    .part1 h2 {
-        font-size: 22px;
-        line-height: 1.4;
-        margin: 0 0 10px 0;
-    }
-
-
-    /* Poojasri V */
-
-    .part1 h1 {
-        font-size: 42px;
-        line-height: 1.2;
-        margin: 0 0 20px 0;
-    }
-
-
-    /* BCA Student */
-
-    .part1 h3 {
-        font-size: 19px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-    }
-
-
-    /* Description */
-
-    .part1 p {
-        width: 100%;
-        max-width: 100%;
-        font-size: 16px;
-        line-height: 1.7;
-        margin-bottom: 25px;
-    }
-
-
-    /* ================================
-       BUTTONS
-       ================================ */
-
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        width: 100%;
-    }
-
-    .buttons a,
-    .buttons button {
-        padding: 15px 25px;
-        font-size: 16px;
-        max-width: 100%;
-    }
-
-
-    /* ================================
-       WEB DESIGNER
-       ================================ */
-
-    .web-designer {
-        width: 100%;
         text-align: center;
-        font-size: 28px;
-        margin-top: 35px;
+
+        padding: 20px 15px;
     }
 
-
-    /* ================================
-       ALL IMAGES
-       ================================ */
-
-    img {
-        max-width: 100%;
-        height: auto;
+    footer h3 {
+        font-size: 20px;
     }
 
-
-    /* ================================
-       SECTIONS
-       ================================ */
-
-    section {
-        width: 100%;
-        max-width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
+    footer p {
+        font-size: 11px;
     }
-
-
-    /* ================================
-       CARDS
-       ================================ */
-
-    .card {
-        width: 100%;
-        max-width: 100%;
-        margin: 15px 0;
-    }
+}
 }
