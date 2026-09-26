@@ -949,3 +949,189 @@ footer p {
 * {
     cursor: pointer;
 }
+
+/* ================================
+   MOBILE VIEW
+   ================================ */
+
+@media screen and (max-width: 768px) {
+
+    /* Prevent horizontal scrolling */
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    /* ================================
+       NAVIGATION
+       ================================ */
+
+    nav {
+        width: 100%;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    nav h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        font-size: 15px;
+    }
+
+
+    /* ================================
+       DOWNLOAD RESUME BUTTON
+       ================================ */
+
+    nav .resume-btn {
+        margin-top: 20px;
+        padding: 15px 28px;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+
+    /* ================================
+       HOME / HERO SECTION
+       ================================ */
+
+    .part1 {
+        width: 100%;
+        min-height: 850px;
+        padding: 50px 20px;
+
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+    /* Hello, I'm */
+
+    .part1 h2 {
+        font-size: 22px;
+        line-height: 1.4;
+        margin: 0 0 10px 0;
+    }
+
+
+    /* Poojasri V */
+
+    .part1 h1 {
+        font-size: 42px;
+        line-height: 1.2;
+        margin: 0 0 20px 0;
+    }
+
+
+    /* BCA Student */
+
+    .part1 h3 {
+        font-size: 19px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+
+    /* Description */
+
+    .part1 p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+
+    /* ================================
+       BUTTONS
+       ================================ */
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .buttons a,
+    .buttons button {
+        padding: 15px 25px;
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+
+    /* ================================
+       WEB DESIGNER
+       ================================ */
+
+    .web-designer {
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+        margin-top: 35px;
+    }
+
+
+    /* ================================
+       ALL IMAGES
+       ================================ */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* ================================
+       SECTIONS
+       ================================ */
+
+    section {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    /* ================================
+       CARDS
+       ================================ */
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+}
